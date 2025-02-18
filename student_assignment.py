@@ -9,7 +9,7 @@ q2_pdf = "勞動基準法.pdf"
 def load_with_PyPdf(file_path):
     loader = PyPDFLoader(file_path)
     docs = loader.load()
-    return docs
+    return docs[-1]
 
 def hw02_1(q1_pdf):
     pdf_file_path = "OpenSourceLicenses.pdf"
@@ -18,3 +18,8 @@ def hw02_1(q1_pdf):
 
 def hw02_2(q2_pdf):
     pass
+
+
+if __name__ == "__main__":
+    result = hw02_1(q1_pdf)
+    print(result)
