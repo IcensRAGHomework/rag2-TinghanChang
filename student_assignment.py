@@ -12,9 +12,8 @@ def load_with_PyPdf(file_path):
     return docs[-1]
 
 def hw02_1(q1_pdf):
-    pdf_file_path = "OpenSourceLicenses.pdf"
-    docs = load_with_PyPdf(pdf_file_path)
-    return docs
+    result = load_with_PyPdf(q1_pdf)
+    return result
 
 def hw02_2(q2_pdf):
     pass
